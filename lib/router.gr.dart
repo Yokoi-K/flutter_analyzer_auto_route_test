@@ -70,7 +70,7 @@ class TopRoute extends _i3.PageRouteInfo<void> {
 class SubRoute extends _i3.PageRouteInfo<SubRouteArgs> {
   SubRoute({
     _i4.Key? key,
-    required void Function() onPressed,
+    required dynamic onPressed,
   }) : super(
           SubRoute.name,
           path: '/sub-page',
@@ -91,7 +91,7 @@ class SubRouteArgs {
 
   final _i4.Key? key;
 
-  final void Function() onPressed;
+  final dynamic onPressed;
 
   @override
   String toString() {
